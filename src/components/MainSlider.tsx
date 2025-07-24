@@ -1,38 +1,39 @@
 import Carousel from 'react-bootstrap/Carousel';
+import './MainSlider.css'; // Asegúrate de importar el CSS
 
 const MainSlider = () => {
   return (
     <Carousel fade>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://static.nike.com/a/images/f_auto/dpr_1.1,cs_srgb/w_1223,c_limit/0fd0039a-08db-4e06-930f-6735a319cbdf/sitio-web-oficial-de-nike.jpg"
+          className="carousel-img"
+          src="https://scontent.fuio1-2.fna.fbcdn.net/v/t51.82787-15/522711011_18377859100122082_4614703524069799427_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHlYI27CjtFPXA0sd-TgAw6yb0Te68vSjLJvRN7ry9KMuDXiuhjyqqnn1hbWeyqZdtwJpGw53h2YHehcuAdTBaq&_nc_ohc=tWWQjDBltKEQ7kNvwHFejD8&_nc_oc=AdkAVowxDqENo_KlA8vbpkr9HFuVAv85ZlmF_ha-lzFOpkA3z7WOg8pyI-4uyNEvSvY&_nc_zt=23&_nc_ht=scontent.fuio1-2.fna&_nc_gid=1CAW0Cp_QwIS2hg-sJW_qw&oh=00_AfSEGdyBqQtLLOoWWKldhX33527RXG0b6oRwZlI5j57r5w&oe=6886FB68"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>RUN SUPPORTED</h3>
+          <h3 className='main'>RUN SUPPORTED</h3>
           <p>Supportive cushioning for your daily runs.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://instagram.fuio13-1.fna.fbcdn.net/v/t39.30808-6/472490172_536275286080600_6638987308603383289_n.jpg?stp=dst-jpg_e35_s1080x1080_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjIwMDB4MjAwMC5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=instagram.fuio13-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QEMJrIKQSYYtsEf6u5pG6CQWb-9D5wJBlM8XJps6UNEeJ0ZXO5zmlK8NUWRMtEF4r0&_nc_ohc=hK8t3_sXwtoQ7kNvwEWlC7V&_nc_gid=4YcYZPEZDzNjuCbf-ar9fA&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzI0MDI0MjM4NzMxNjg2NzUwMA%3D%3D.3-ccb7-5&oh=00_AfTxEvKiUxaB8IkXUh9aXCtDY_7kU98GXhV9ba05Y9ec0Q&oe=6886279A&_nc_sid=7a9f4b"
+          className="carousel-img"
+          src="https://scontent.fuio1-2.fna.fbcdn.net/v/t39.30808-6/472826342_536122342762561_1612395897891698701_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFGqqQh2WoNxhE6LHboFY6hG2Lr9YjOcM4bYuv1iM5wznComs1ybB70rdt-8083hQohnE5ROXveK4EjConAYkyS&_nc_ohc=IrrI9cdJ_icQ7kNvwGsAbbX&_nc_oc=AdkvFvdqutGCaCHN9laxgZDVBCbpLgLWBiAQsBRG93YKhmjS23EogXI5UruvvTY_Qvg&_nc_zt=23&_nc_ht=scontent.fuio1-2.fna&_nc_gid=AtFaoicmJ_0DKSy_N911fA&oh=00_AfT7LS6UGR7lhCxbnDJ_mB5bT97gYxf6JuacS-bqjaINkQ&oe=6886E563"
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Practice Like A Pro</h3>
+          <h3 className='main'>Practice Like A Pro</h3>
           <p>Back to Sport. Be ready.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://instagram.fuio13-1.fna.fbcdn.net/v/t39.30808-6/472490172_536275286080600_6638987308603383289_n.jpg?stp=dst-jpg_e35_s1080x1080_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjIwMDB4MjAwMC5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=instagram.fuio13-1.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2QEMJrIKQSYYtsEf6u5pG6CQWb-9D5wJBlM8XJps6UNEeJ0ZXO5zmlK8NUWRMtEF4r0&_nc_ohc=hK8t3_sXwtoQ7kNvwEWlC7V&_nc_gid=4YcYZPEZDzNjuCbf-ar9fA&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzI0MDI0MjM4NzMxNjg2NzUwMA%3D%3D.3-ccb7-5&oh=00_AfTxEvKiUxaB8IkXUh9aXCtDY_7kU98GXhV9ba05Y9ec0Q&oe=6886279A&_nc_sid=7a9f4b"
-          alt="Second slide"
+          className="carousel-img"
+          src="https://scontent.fuio1-1.fna.fbcdn.net/v/t51.75761-15/488191400_18135145294398412_5591351083520110504_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG5Yf9B57CSjniob7Z8AvLNObJY3rYXTlM5sljethdOU1JUZX4Dxpn6xkMCE9uAuqdqdq-vM0rpzVfdbBOjWrFf&_nc_ohc=SvfZbmOE0WoQ7kNvwEQ5Dtk&_nc_oc=AdkpiuvuKoNBx2htEmUFAWfeNurTZpUlRjUPqQvvYFVwbJBn3LnzpUvrBZcszF7ETtI&_nc_zt=23&_nc_ht=scontent.fuio1-1.fna&_nc_gid=gAQUKLiS2ZkCwwgASpH26A&oh=00_AfRU7AGRH_lrYkhTp8BwOf7gvVuYBdsbWnsNxnymqZBjPg&oe=6887040D"
+          alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Practice Like A Pro</h3>
+          <h3 className='main'>Practice Like A Pro</h3>
           <p>Back to Sport. Be ready.</p>
         </Carousel.Caption>
       </Carousel.Item>

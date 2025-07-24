@@ -1,0 +1,13 @@
+.carousel-img {
+  width: 100%;
+  height: 500px; /* Ajusta según lo alto que quieras tu slider */
+  object-fit: cover;
+  object-position: center;
+}
+
+.main{
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px 0x
+}

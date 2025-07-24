@@ -16,12 +16,25 @@ export interface Product {
   description: string;
   price: number; // precio como número
   stock: number;
-  imagen: string;
+  imagen?: string;
+  tipo?: string;
 }
 
-export async function fetchProductos(): Promise<Product[]> {
-  const response = await api.get('/productoss');
-  // Convertimos price a número
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token && config.headers) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+export async function fetchProductos(tipo?: string): Promise<Product[]> {
+  // Arma la URL con query si tipo está definido
+  const url = tipo ? `/productos?tipo=${encodeURIComponent(tipo)}` : '/productos';
+
+  const response = await api.get(url);
+
+  // Convertimos price a número, por si viene como string
   return response.data.map((prod: any) => ({
     ...prod,
     price: Number(prod.price),
