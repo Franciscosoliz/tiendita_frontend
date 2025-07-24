@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const API_BASE_URL = 'https://tiendita-api.desarrollo-software.xyz';
-const API_BASE_URL = 'http://localhost:2990';
+const API_BASE_URL = 'https://nestjs-tiendita-backend-api.desarrollo-software.xyz/';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
