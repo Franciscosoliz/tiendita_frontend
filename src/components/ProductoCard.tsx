@@ -4,7 +4,7 @@ import { useCart } from './CartContext';
 
 interface Props {
   product: Product;
-  role: 'user' | 'admin' | string; // permite string por seguridad
+  role?: 'user' | 'admin' | string; // permite string por seguridad
   onEdit?: (product: Product) => void;
   onDelete?: (id: number) => void;
 }
